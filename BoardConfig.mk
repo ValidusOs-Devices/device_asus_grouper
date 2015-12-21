@@ -42,6 +42,13 @@ TARGET_GCC_VERSION_EXP := 4.9
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
 
+# Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
+
 -include vendor/asus/grouper/BoardConfigVendor.mk
 include device/asus/grouper/BoardConfigCommon.mk
 
