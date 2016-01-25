@@ -5,18 +5,18 @@ TARGET_SCREEN_WIDTH := 800
 # Release name
 PRODUCT_RELEASE_NAME := Nexus7
 
-# Inherit some common Tesla stuff.
-$(call inherit-product, vendor/tesla/config/common_full_tablet_wifionly.mk)
+# Inherit some common Validus stuff.
+$(call inherit-product, vendor/validus/config/common_full_tablet_wifionly.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/validus/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := grouper
-PRODUCT_NAME := tesla_grouper
+PRODUCT_NAME := validus_grouper
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
